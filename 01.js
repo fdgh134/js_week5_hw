@@ -14,3 +14,19 @@ class Person {
 const person1 = new Person("John", 32);
 
 person1.sayHello();
+
+class Car {
+  constructor(modelName, modelYear, type, price){
+    this.modelName = modelName;
+    this.modelYear = modelYear;
+    this.type = type;
+    this.price = price;
+  }
+  ppang(){
+    console.log(`${this.modelName}: 빵!!`);
+  }
+}
+
+const car1 = new Car("casper", "2024", "power", 2000);
+
+car1.ppang();
