@@ -25,8 +25,13 @@ class Car {
   ppang(){
     console.log(`${this.modelName}: 빵!!`);
   }
+
+  printModelYear(){
+    console.log(`이 ${this.modelName}은(는) ${this.modelYear}년식 입니다.`);
+  }
 }
 
 const car1 = new Car("casper", "2024", "power", 2000);
 
 car1.ppang();
+car1.printModelYear();
